@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BankGPT - Your AI Banking Advisor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <button class="new-chat-btn" onclick="startNewChat()">
+                    <i class="fas fa-plus"></i>
+                    New chat
+                </button>
+            </div>
+            
+            <div class="chat-history">
+                <div class="chat-history-item active" onclick="selectChat(this)">
+                    <i class="fas fa-comments"></i>
+                    <span>Banking consultation</span>
+                </div>
+            </div>
+            
+            <div class="sidebar-footer">
+                <div class="user-profile">
+                    <div class="avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <span>Banking Customer</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Chat Area -->
+        <div class="main-content">
+            <div class="chat-header">
+                <h1>BankGPT</h1>
+                <p>Your personal AI banking advisor</p>
+            </div>
+
+            <div class="chat-container" id="chatContainer">
+                <div class="welcome-message">
+                    <div class="bot-avatar">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="message-content">
+                        <h2>Welcome to BankGPT!</h2>
+                        <p>I'm your AI banking advisor. I can help you with:</p>
+                        <div class="suggestion-cards">
+                            <div class="suggestion-card" onclick="sendSuggestion('What are the best savings account options?')">
+                                <i class="fas fa-piggy-bank"></i>
+                                <span>Savings accounts</span>
+                            </div>
+                            <div class="suggestion-card" onclick="sendSuggestion('How can I improve my credit score?')">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Credit advice</span>
+                            </div>
+                            <div class="suggestion-card" onclick="sendSuggestion('What investment options do you recommend?')">
+                                <i class="fas fa-coins"></i>
+                                <span>Investment guidance</span>
+                            </div>
+                            <div class="suggestion-card" onclick="sendSuggestion('Help me create a budget plan')">
+                                <i class="fas fa-calculator"></i>
+                                <span>Budget planning</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <div class="input-wrapper">
+                    <textarea 
+                        id="messageInput" 
+                        placeholder="Ask me anything about banking, finances, or investments..."
+                        rows="1"
+                        onkeydown="handleKeyDown(event)"
+                        oninput="adjustTextareaHeight(this)"
+                    ></textarea>
+                    <button class="send-btn" onclick="sendMessage()" id="sendBtn">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+                <div class="input-footer">
+                    <small>BankGPT can make mistakes. Consider checking important information with your bank.</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
