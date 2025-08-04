@@ -1,5 +1,6 @@
 # az-showcase-01a
 # BankGPT - AI Banking Advisor
+# ITS ME!
 
 A single-page website that replicates ChatGPT's interface with a banking advisor theme. This project provides a chatbot experience for banking and financial advice without requiring API keys.
 
