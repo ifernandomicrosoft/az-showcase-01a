@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BankGPT - Your AI Banking Advisor</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Azure Assistant - Your AI Cloud Advisor</title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
@@ -20,8 +20,8 @@
             
             <div class="chat-history">
                 <div class="chat-history-item active" onclick="selectChat(this)">
-                    <i class="fas fa-comments"></i>
-                    <span>Banking consultation</span>
+                    <i class="fas fa-cloud"></i>
+                    <span>Azure consultation</span>
                 </div>
             </div>
             
@@ -30,7 +30,7 @@
                     <div class="avatar">
                         <i class="fas fa-user"></i>
                     </div>
-                    <span>Banking Customer</span>
+                    <span>Azure Customer</span>
                 </div>
             </div>
         </div>
@@ -38,34 +38,34 @@
         <!-- Main Chat Area -->
         <div class="main-content">
             <div class="chat-header">
-                <h1>BankGPT</h1>
-                <p>Your personal AI banking advisor</p>
+                <h1>Azure Assistant</h1>
+                <p>Your personal AI cloud advisor</p>
             </div>
 
             <div class="chat-container" id="chatContainer">
                 <div class="welcome-message">
                     <div class="bot-avatar">
-                        <i class="fas fa-university"></i>
+                        <i class="fas fa-cloud"></i>
                     </div>
                     <div class="message-content">
-                        <h2>Welcome to BankGPT!</h2>
-                        <p>I'm your AI banking advisor. I can help you with:</p>
+                        <h2>Welcome to Azure Assistant!</h2>
+                        <p>I'm your AI cloud advisor. I can help you with:</p>
                         <div class="suggestion-cards">
-                            <div class="suggestion-card" onclick="sendSuggestion('What are the best savings account options?')">
-                                <i class="fas fa-piggy-bank"></i>
-                                <span>Savings accounts</span>
+                            <div class="suggestion-card" onclick="sendSuggestion('What Azure services should I use for my application?')">
+                                <i class="fas fa-server"></i>
+                                <span>Azure Services</span>
                             </div>
-                            <div class="suggestion-card" onclick="sendSuggestion('How can I improve my credit score?')">
+                            <div class="suggestion-card" onclick="sendSuggestion('How can I optimize my Azure costs?')">
                                 <i class="fas fa-chart-line"></i>
-                                <span>Credit advice</span>
+                                <span>Cost Optimization</span>
                             </div>
-                            <div class="suggestion-card" onclick="sendSuggestion('What investment options do you recommend?')">
-                                <i class="fas fa-coins"></i>
-                                <span>Investment guidance</span>
+                            <div class="suggestion-card" onclick="sendSuggestion('What are the best security practices for Azure?')">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Security Best Practices</span>
                             </div>
-                            <div class="suggestion-card" onclick="sendSuggestion('Help me create a budget plan')">
-                                <i class="fas fa-calculator"></i>
-                                <span>Budget planning</span>
+                            <div class="suggestion-card" onclick="sendSuggestion('Help me architect a scalable solution')">
+                                <i class="fas fa-sitemap"></i>
+                                <span>Architecture Guidance</span>
                             </div>
                         </div>
                     </div>
@@ -76,7 +76,7 @@
                 <div class="input-wrapper">
                     <textarea 
                         id="messageInput" 
-                        placeholder="Ask me anything about banking, finances, or investments..."
+                        placeholder="Ask me anything about Azure, cloud services, or architecture..."
                         rows="1"
                         onkeydown="handleKeyDown(event)"
                         oninput="adjustTextareaHeight(this)"
@@ -86,7 +86,7 @@
                     </button>
                 </div>
                 <div class="input-footer">
-                    <small>BankGPT can make mistakes. Consider checking important information with your bank.</small>
+                    <small>Azure Assistant can make mistakes. Consider checking important information with Azure documentation.</small>
                 </div>
             </div>
         </div>

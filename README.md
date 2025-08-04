@@ -1,40 +1,40 @@
 # az-showcase-01a
-# BankGPT - AI Banking Advisor
+# Azure Assistant - AI Cloud Advisor
 
-A single-page website that replicates ChatGPT's interface with a banking advisor theme. This project provides a chatbot experience for banking and financial advice without requiring API keys.
+A single-page website that replicates ChatGPT's interface with an Azure cloud advisor theme. This project provides a chatbot experience for Azure and cloud guidance without requiring API keys.
 
 ## Features
 
-- 🏦 **Banking Advisory Interface** - Clean, modern ChatGPT-like design
+- ☁️ **Azure Advisory Interface** - Clean, modern ChatGPT-like design with Azure branding
 - 💬 **Interactive Chat** - Real-time messaging with typing indicators
-- 🎯 **Smart Responses** - Contextual banking advice based on keywords
+- 🎯 **Smart Responses** - Contextual Azure advice based on keywords
 - 📱 **Responsive Design** - Works on desktop, tablet, and mobile devices
-- 💰 **Financial Topics** - Covers savings, credit, investments, budgeting, and more
+- 🔧 **Azure Topics** - Covers services, cost optimization, security, architecture, and more
 - 🔒 **No API Required** - Fully client-side with simulated AI responses
 
 ## Topics Covered
 
-- Savings accounts and high-yield options
-- Credit score improvement strategies
-- Investment guidance and portfolio advice
-- Budget planning and money management
-- Mortgage and home buying advice
-- Debt consolidation and payoff strategies
-- Retirement planning and 401(k) guidance
-- General banking services and account types
+- Azure services and compute options
+- Cost optimization and budget management
+- Security best practices and compliance
+- Architecture guidance and scalability
+- Cloud migration strategies
+- DevOps and deployment guidance
+- Identity and access management
+- General Azure platform guidance
 
 ## Getting Started
 
 1. Open `index.html` in your web browser
-2. Start chatting with the AI banking advisor
+2. Start chatting with the AI Azure advisor
 3. Use the suggestion cards for quick topic starters
-4. Ask questions about banking, finance, or investments
+4. Ask questions about Azure, cloud services, or architecture
 
 ## File Structure
 
 ```
 ├── index.html      # Main HTML structure
-├── styles.css      # ChatGPT-inspired styling
+├── style.css       # ChatGPT-inspired styling with Azure theme
 ├── script.js       # Interactive functionality and AI responses
 └── README.md       # Project documentation
 ```
@@ -49,7 +49,7 @@ A single-page website that replicates ChatGPT's interface with a banking advisor
 
 ## Customization
 
-You can easily customize the banking responses by editing the `bankingResponses` object in `script.js`. Add new topics or modify existing responses to match your specific banking needs.
+You can easily customize the Azure responses by editing the `azureResponses` object in `script.js`. Add new topics or modify existing responses to match your specific Azure needs.
 
 ## Browser Compatibility
 
@@ -60,10 +60,10 @@ You can easily customize the banking responses by editing the `bankingResponses`
 
 ## Future Enhancements
 
-- Integration with real banking APIs
+- Integration with real Azure APIs
 - User authentication and session management
 - Chat history persistence
-- Advanced financial calculators
+- Advanced Azure calculators
 - Multi-language support
 
 ## License
