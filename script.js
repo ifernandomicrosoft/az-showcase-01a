@@ -246,7 +246,7 @@ function startNewChat() {
                 <i class="fas fa-university"></i>
             </div>
             <div class="message-content">
-                <h2>Welcome to BankGPT!</h2>
+                <h2>Welcome to IssBankGPT!</h2>
                 <p>I'm your AI banking advisor. I can help you with:</p>
                 <div class="suggestion-cards">
                     <div class="suggestion-card" onclick="sendSuggestion('What are the best savings account options?')">
