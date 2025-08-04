@@ -58,8 +58,37 @@ You can easily customize the banking responses by editing the `bankingResponses`
 - Safari 12+
 - Edge 79+
 
+## OpenAI API Integration Project
+
+🚀 **NEW**: This repository now includes a comprehensive project plan for integrating OpenAI's APIs to transform BankGPT from static responses to dynamic AI-powered banking advice.
+
+### Project Documentation
+- 📋 **[Project Plan](OPENAI_INTEGRATION_PLAN.md)** - Complete 8-week implementation plan
+- ✅ **[Implementation Checklist](docs/API_INTEGRATION_CHECKLIST.md)** - Task-by-task progress tracking
+- 🏗️ **[Technical Architecture](docs/TECHNICAL_ARCHITECTURE.md)** - System design and architecture details
+- 💰 **[Cost Management Guide](docs/COST_MANAGEMENT.md)** - Budget monitoring and optimization
+- 🔧 **[Backend Implementation](docs/BACKEND_IMPLEMENTATION.md)** - API service development guide
+
+### Integration Benefits
+- **Real AI Responses**: Dynamic, contextual banking advice powered by OpenAI GPT models
+- **Personalized Experience**: Conversation history and context-aware responses
+- **Scalable Architecture**: Production-ready backend with monitoring and cost controls
+- **Security First**: Secure API key management and data protection
+- **Cost Effective**: Built-in monitoring, caching, and budget management
+
+### Quick Start for Development
+```bash
+# Backend setup
+cd backend
+npm install
+cp .env.example .env
+# Edit .env with your OpenAI API key
+npm run dev
+```
+
 ## Future Enhancements
 
+- ✅ **OpenAI API Integration** (planned - see project docs above)
 - Integration with real banking APIs
 - User authentication and session management
 - Chat history persistence
