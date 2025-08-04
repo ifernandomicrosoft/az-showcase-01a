@@ -1,49 +1,37 @@
-// Banking advisor responses and knowledge base
-const bankingResponses = {
+// Azure cloud advisor responses and knowledge base
+const azureResponses = {
     greetings: [
-        "Hello! I'm your AI banking advisor. How can I help you today?",
-        "Hi there! I'm here to assist you with all your banking and financial questions.",
-        "Welcome! I'm your personal banking assistant. What would you like to know?"
+        "Hello! I'm your AI Azure advisor. How can I help you with your cloud journey today?",
+        "Hi there! I'm here to assist you with all your Azure and cloud questions.",
+        "Welcome! I'm your personal Azure assistant. What would you like to know about Azure services?"
     ],
     
-    savings: [
-        "For savings accounts, I recommend looking into high-yield savings accounts which typically offer better interest rates than traditional savings. Consider accounts with no monthly fees and easy access to your funds. Online banks often offer competitive rates of 4-5% APY.",
-        "Great question about savings! Here are some options to consider:\n\n🏦 **High-Yield Savings**: 4-5% APY, perfect for emergency funds\n💰 **Money Market Accounts**: Higher rates with check-writing privileges\n📈 **CDs**: Fixed rates for specific terms, great for goals with timelines\n\nWhat's your savings goal and timeline?"
+    services: [
+        "Azure offers a comprehensive range of cloud services! Here are some key categories:\n\n☁️ **Compute**: Virtual Machines, App Service, Azure Functions, AKS\n🗄️ **Storage**: Blob Storage, File Storage, Queue Storage, Table Storage\n🌐 **Networking**: Virtual Network, Load Balancer, Application Gateway\n📊 **Databases**: SQL Database, Cosmos DB, MySQL, PostgreSQL\n🤖 **AI/ML**: Cognitive Services, Machine Learning, Bot Service\n\nWhat type of application are you building?",
+        "Great question about Azure services! Here's how to choose the right ones:\n\n🎯 **Start with your requirements**: Performance, scalability, budget\n🔍 **Consider service tiers**: Basic, Standard, Premium options\n📈 **Think about growth**: Choose services that can scale with you\n🔒 **Security first**: Enable built-in security features\n\nWhat's your specific use case or application type?"
     ],
     
-    credit: [
-        "To improve your credit score, focus on these key areas:\n\n✅ **Pay bills on time** (35% of your score)\n✅ **Keep credit utilization below 30%** (30% of your score)\n✅ **Don't close old credit cards** (length of history matters)\n✅ **Monitor your credit report** for errors\n✅ **Consider becoming an authorized user** on someone's good account\n\nWould you like specific strategies for any of these areas?",
-        "Credit improvement is a marathon, not a sprint! Here's my recommended approach:\n\n1. **Check your credit report** for free at annualcreditreport.com\n2. **Set up autopay** for at least minimum payments\n3. **Pay down high balances** - even small payments help\n4. **Consider a secured credit card** if you're building credit\n\nWhat's your current credit situation?"
+    costs: [
+        "Azure cost optimization is crucial! Here are my top strategies:\n\n💰 **Right-sizing**: Use Azure Advisor recommendations\n⏰ **Scheduling**: Auto-shutdown VMs during off-hours\n📊 **Reserved Instances**: Up to 72% savings for predictable workloads\n🔄 **Spot VMs**: Up to 90% savings for fault-tolerant workloads\n📈 **Monitor with Cost Management**: Set budgets and alerts\n\nWhich Azure services are you currently using?",
+        "Smart thinking about costs! Here's a comprehensive approach:\n\n1. **Use Azure Cost Management** - track spending in real-time\n2. **Implement tagging strategy** - organize resources by project/environment\n3. **Leverage Azure Hybrid Benefit** - save on Windows and SQL licenses\n4. **Consider consumption-based services** - pay only for what you use\n5. **Regular cost reviews** - monthly optimization checks\n\nWhat's your biggest cost concern right now?"
     ],
     
-    investment: [
-        "For investment guidance, I'd suggest starting with these fundamentals:\n\n📊 **Emergency Fund First**: 3-6 months of expenses in savings\n🎯 **401(k) Match**: Free money from your employer\n📈 **Index Funds**: Low-cost, diversified options like S&P 500\n🏠 **Consider Your Timeline**: Longer timeline = more growth potential\n\nWhat's your investment timeline and risk tolerance?",
-        "Smart thinking about investments! Here's a beginner-friendly approach:\n\n💡 **Start with target-date funds** - they adjust automatically\n💡 **Dollar-cost averaging** - invest the same amount regularly\n💡 **Diversification** - don't put all eggs in one basket\n💡 **Low fees matter** - expense ratios under 0.5% are ideal\n\nAre you investing for retirement, a house, or another goal?"
+    security: [
+        "Azure security best practices are essential! Here's my recommended approach:\n\n🔒 **Identity & Access**: Use Azure AD, enable MFA, implement RBAC\n🛡️ **Network Security**: NSGs, Azure Firewall, Private Endpoints\n🔑 **Key Management**: Azure Key Vault for secrets and certificates\n📊 **Monitoring**: Azure Security Center, Sentinel for threat detection\n🔐 **Data Protection**: Encryption at rest and in transit\n\nWhat type of workload are you securing?",
+        "Security should be built into every layer! Here's a comprehensive checklist:\n\n✅ **Enable Azure Security Center** - continuous security assessment\n✅ **Implement Zero Trust** - verify every request\n✅ **Use managed identities** - eliminate stored credentials\n✅ **Regular security reviews** - quarterly assessments\n✅ **Backup and disaster recovery** - protect against data loss\n\nAre you looking for specific compliance requirements?"
     ],
     
-    budget: [
-        "Let's create a budget that works for you! I recommend the 50/30/20 rule:\n\n🏠 **50% Needs**: Housing, utilities, groceries, minimum debt payments\n🎉 **30% Wants**: Entertainment, dining out, hobbies\n💰 **20% Savings**: Emergency fund, retirement, debt payoff\n\nWould you like help calculating your specific numbers?",
-        "Budgeting is the foundation of financial success! Here's my step-by-step approach:\n\n1. **Track spending** for a week to see patterns\n2. **List all income sources** and fixed expenses\n3. **Identify categories** where you can optimize\n4. **Use the envelope method** for variable expenses\n5. **Review and adjust** monthly\n\nWhat's your biggest budgeting challenge right now?"
+    architecture: [
+        "Let's design a scalable Azure architecture! Here are key principles:\n\n🏗️ **Well-Architected Framework**: Reliability, Security, Cost, Performance, Operations\n🔄 **Microservices**: Break down monoliths for better scalability\n⚖️ **Load Balancing**: Distribute traffic across multiple instances\n📊 **Auto-scaling**: Automatically adjust resources based on demand\n🌍 **Multi-region**: Deploy across regions for high availability\n\nWhat's your application's expected scale and requirements?",
+        "Great thinking about architecture! Here's my step-by-step approach:\n\n1. **Define requirements** - performance, availability, compliance\n2. **Choose compute model** - VMs, containers, serverless, or hybrid\n3. **Design for resilience** - implement retry policies and circuit breakers\n4. **Plan data strategy** - storage types, backup, and replication\n5. **Implement monitoring** - Application Insights, Log Analytics\n\nWhat type of application are you architecting?"
     ],
-    
-    mortgage: [
-        "For mortgage advice, here are the key factors to consider:\n\n🏡 **Down Payment**: 20% avoids PMI, but 3-5% options exist\n📊 **Credit Score**: 740+ gets best rates\n💰 **Debt-to-Income**: Keep total debts under 36% of income\n⏰ **Rate Type**: Fixed vs. adjustable based on your timeline\n\nAre you a first-time homebuyer or looking to refinance?"
-    ],
-    
-    debt: [
-        "Let's tackle that debt strategically! Two popular approaches:\n\n❄️ **Debt Snowball**: Pay minimums on all, extra on smallest balance (psychological wins)\n⚡ **Debt Avalanche**: Pay minimums on all, extra on highest interest rate (saves most money)\n\nAlso consider:\n- Debt consolidation loans\n- Balance transfer cards (0% intro APR)\n- Negotiating with creditors\n\nWhat types of debt are you dealing with?"
-    ],
-    
-    retirement: [
-        "Retirement planning is crucial! Here's my recommended priority order:\n\n1. **Employer 401(k) match** - always get the full match\n2. **High-yield savings** - emergency fund first\n3. **Max out Roth IRA** - $6,500 for 2023 (tax-free growth)\n4. **Back to 401(k)** - up to $22,500 for 2023\n5. **Taxable investments** - for early retirement goals\n\nHow many years until retirement are you planning for?"
-    ]
 };
 
 const fallbackResponses = [
-    "That's an interesting question! While I don't have specific information about that topic, I'd recommend speaking with a licensed financial advisor or your bank's representative for personalized advice.",
-    "I'd love to help with that! For detailed information on this topic, I suggest contacting your bank directly or consulting with a certified financial planner who can provide personalized guidance.",
-    "That's a great question about banking and finance! For the most accurate and up-to-date information, I recommend checking with your financial institution or speaking with a qualified financial advisor.",
-    "I appreciate your question! While I can provide general banking guidance, for specific situations like this, it's best to consult with your bank or a licensed financial professional who can review your individual circumstances."
+    "That's an interesting question! While I don't have specific information about that topic, I'd recommend checking the Azure documentation or speaking with a Microsoft Azure specialist for detailed guidance.",
+    "I'd love to help with that! For detailed information on this Azure topic, I suggest consulting the official Azure documentation or contacting Microsoft Support for personalized assistance.",
+    "That's a great question about Azure and cloud services! For the most accurate and up-to-date information, I recommend checking the Azure portal or speaking with a certified Azure solutions architect.",
+    "I appreciate your question! While I can provide general Azure guidance, for specific scenarios like this, it's best to consult the Azure documentation or speak with a Microsoft certified professional who can review your specific requirements."
 ];
 
 let chatHistory = [];
@@ -110,7 +98,7 @@ function addMessage(message, sender) {
     
     const avatar = document.createElement('div');
     avatar.className = `message-avatar ${sender}`;
-    avatar.innerHTML = sender === 'user' ? '<i class="fas fa-user"></i>' : '<i class="fas fa-university"></i>';
+    avatar.innerHTML = sender === 'user' ? '<i class="fas fa-user"></i>' : '<i class="fas fa-cloud"></i>';
     
     const messageText = document.createElement('div');
     messageText.className = 'message-text';
@@ -146,7 +134,7 @@ function showTypingIndicator() {
     
     const avatar = document.createElement('div');
     avatar.className = 'message-avatar bot';
-    avatar.innerHTML = '<i class="fas fa-university"></i>';
+    avatar.innerHTML = '<i class="fas fa-cloud"></i>';
     
     const typingText = document.createElement('div');
     typingText.className = 'message-text';
@@ -180,52 +168,37 @@ function generateResponse(userMessage) {
     
     // Greeting responses
     if (message.match(/\b(hello|hi|hey|good morning|good afternoon|good evening)\b/)) {
-        return getRandomResponse(bankingResponses.greetings);
+        return getRandomResponse(azureResponses.greetings);
     }
     
-    // Savings related
-    if (message.match(/\b(savings?|save|saving|interest|emergency fund|high.yield)\b/)) {
-        return getRandomResponse(bankingResponses.savings);
+    // Azure services related
+    if (message.match(/\b(azure services?|services?|compute|storage|database|networking|ai|ml|functions?|app service|virtual machine)\b/)) {
+        return getRandomResponse(azureResponses.services);
     }
     
-    // Credit related
-    if (message.match(/\b(credit|score|credit score|improve credit|credit report|credit card)\b/)) {
-        return getRandomResponse(bankingResponses.credit);
+    // Cost optimization related
+    if (message.match(/\b(cost|costs?|optimize|optimization|budget|pricing|expensive|save|saving|money)\b/)) {
+        return getRandomResponse(azureResponses.costs);
     }
     
-    // Investment related
-    if (message.match(/\b(invest|investment|stocks?|bonds?|401k|ira|retirement|portfolio|etf|mutual fund)\b/)) {
-        return getRandomResponse(bankingResponses.investment);
+    // Security related
+    if (message.match(/\b(security|secure|firewall|encryption|identity|access|compliance|threat|vulnerability|protection)\b/)) {
+        return getRandomResponse(azureResponses.security);
     }
     
-    // Budget related
-    if (message.match(/\b(budget|budgeting|expenses?|spending|money management|financial plan)\b/)) {
-        return getRandomResponse(bankingResponses.budget);
+    // Architecture related
+    if (message.match(/\b(architecture|architect|scalable|scale|design|microservices?|load.balanc|high.availabil|disaster.recover)\b/)) {
+        return getRandomResponse(azureResponses.architecture);
     }
     
-    // Mortgage related
-    if (message.match(/\b(mortgage|home loan|house|buying.home|down payment|refinanc)\b/)) {
-        return getRandomResponse(bankingResponses.mortgage);
-    }
-    
-    // Debt related
-    if (message.match(/\b(debt|loan|pay off|consolidat|balance transfer|debt management)\b/)) {
-        return getRandomResponse(bankingResponses.debt);
-    }
-    
-    // Retirement related
-    if (message.match(/\b(retirement|retire|pension|401k|403b|ira|roth|social security)\b/)) {
-        return getRandomResponse(bankingResponses.retirement);
-    }
-    
-    // Banking services
-    if (message.match(/\b(checking|account|bank|banking|debit|atm|fees|mobile banking)\b/)) {
-        return "For checking accounts, I recommend looking for accounts with:\n\n✅ **No monthly maintenance fees**\n✅ **Free ATM access** or reimbursements\n✅ **Mobile banking** with check deposit\n✅ **Overdraft protection** options\n✅ **Direct deposit** benefits\n\nMany online banks offer these features with competitive benefits. What specific banking services are you most interested in?";
+    // Azure general services
+    if (message.match(/\b(azure|cloud|microsoft|subscription|resource|portal|deployment)\b/)) {
+        return "Azure is Microsoft's comprehensive cloud platform! Here's what makes it powerful:\n\n☁️ **Global Infrastructure**: 60+ regions worldwide\n🔧 **200+ Services**: From compute to AI to IoT\n🔒 **Enterprise Security**: Built-in compliance and governance\n💼 **Hybrid Capabilities**: Seamlessly connect on-premises and cloud\n🤖 **AI Integration**: Cognitive Services and Machine Learning\n\nWhat specific Azure challenge can I help you solve today?";
     }
     
     // Thank you responses
     if (message.match(/\b(thank you|thanks|appreciate|helpful)\b/)) {
-        return "You're very welcome! I'm here to help you navigate your financial journey. Feel free to ask me anything else about banking, investments, budgeting, or any other financial topics. Remember, for specific account details or transactions, you'll want to contact your bank directly. Is there anything else I can help you with today?";
+        return "You're very welcome! I'm here to help you navigate your Azure cloud journey. Feel free to ask me anything else about Azure services, architecture, security, cost optimization, or any other cloud topics. Remember, for specific account details or billing, you'll want to contact Microsoft Support directly. Is there anything else I can help you with today?";
     }
     
     // Default fallback
@@ -243,27 +216,27 @@ function startNewChat() {
     chatContainer.innerHTML = `
         <div class="welcome-message">
             <div class="bot-avatar">
-                <i class="fas fa-university"></i>
+                <i class="fas fa-cloud"></i>
             </div>
             <div class="message-content">
-                <h2>Welcome to BankGPT!</h2>
-                <p>I'm your AI banking advisor. I can help you with:</p>
+                <h2>Welcome to Azure Assistant!</h2>
+                <p>I'm your AI cloud advisor. I can help you with:</p>
                 <div class="suggestion-cards">
-                    <div class="suggestion-card" onclick="sendSuggestion('What are the best savings account options?')">
-                        <i class="fas fa-piggy-bank"></i>
-                        <span>Savings accounts</span>
+                    <div class="suggestion-card" onclick="sendSuggestion('What Azure services should I use for my application?')">
+                        <i class="fas fa-server"></i>
+                        <span>Azure Services</span>
                     </div>
-                    <div class="suggestion-card" onclick="sendSuggestion('How can I improve my credit score?')">
+                    <div class="suggestion-card" onclick="sendSuggestion('How can I optimize my Azure costs?')">
                         <i class="fas fa-chart-line"></i>
-                        <span>Credit advice</span>
+                        <span>Cost Optimization</span>
                     </div>
-                    <div class="suggestion-card" onclick="sendSuggestion('What investment options do you recommend?')">
-                        <i class="fas fa-coins"></i>
-                        <span>Investment guidance</span>
+                    <div class="suggestion-card" onclick="sendSuggestion('What are the best security practices for Azure?')">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Security Best Practices</span>
                     </div>
-                    <div class="suggestion-card" onclick="sendSuggestion('Help me create a budget plan')">
-                        <i class="fas fa-calculator"></i>
-                        <span>Budget planning</span>
+                    <div class="suggestion-card" onclick="sendSuggestion('Help me architect a scalable solution')">
+                        <i class="fas fa-sitemap"></i>
+                        <span>Architecture Guidance</span>
                     </div>
                 </div>
             </div>
